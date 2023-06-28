@@ -1,0 +1,210 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+	
+
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=0.5 cm, a4paper]{geometry}
+\usepackage[hidelinks]{{hyperref}
+\usepackage{fontawesome}
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+\vspace{-1mm}
+\simpleheader{headercolour}{}{Hassan Muhammad Yousuf}{Software Engineer}{white}
+\linebreak
+\linebreak\linebreak\linebreak
+
+\begin{center}
+\fontfamily{\sfdefault}\selectfont \color{white}
+  \icon{\faEnvelopeO}{white}{} engr.hassanyousuf@gmail.com 
+  \icon{\faPhone}{white}{} +49 (0) 176 58186368
+   \href{https://github.com/Hassan-Muhammad-Yousuf}{\raisebox{-0.1\height}\faGithub\ {Hassan-Muhammad-Yousuf}} \\
+  \href{https://www.linkedin.com/in/hassan-yousuf-30326b148/}{\raisebox{-0.1\height}\faLinkedinSquare\ {Hassan Yousuf}} \\
+\end{center}
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+
+\subsection*{}
+\vspace{-10mm}
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{_DSC5316.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+
+{\footnotesize
+Enthusiastic and personable Software Engineer seeking to undertake the role of a Software Developer}
+\vspace{4em}
+\bigskip
+
+\bg{cvgreen}{white}{personal} \\[0.5em]
+
+nationality: Pakistani 
+
+DOB: 26 June 1999
+
+Address: Vinetaplatz 8, 13355, Berlin, Germany
+
+
+
+\vspace{4em}
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+\item Reading
+\item Writing
+\item Photography
+\vspace{4em}
+\bigskip
+
+\bg{cvgreen}{white}{Hobbies}\\[0.5em]
+
+\item{Coding}
+\item{Strength Training}
+\item{Travelling}
+
+
+\vspace{4em}
+\bg{cvgreen}{white}{Languages}\\[0.5em]
+
+\item Urdu: Mother Tongue
+\item English: C2
+\item German: A1
+\bigskip
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Degrees}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2022-Current}{Software Engineering }{BEng-Software \newline GISMA}
+    {Germany \color{headerblue}}{}{Gisma Logo.png} \\
+    \cvdegree{2019-2021}{Bachelor's of Arts}{B.A\newline UOB}{Pakistan \color{headerblue}}{}{UOB Logo.png} \\
+    \cvdegree{2014-2016}{Software Engineering \newline(Diploma)}{ACCP(Pro) \newline APTECH }{Pakistan \color{headerblue}}{}{Aptech logo.jpg}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Back End Development}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{Python} &  \barrule{0.45}{0.5em}{cvpurple}\\
+     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.30}{0.5em}{cvpurple} \\
+\end{tabular}
+\section*{Front End Development}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{LaTeX} & \barrule{0.35}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{HTML, CSS} & \barrule{0.45}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.30}{0.5em}{cvpurple} \\
+\end{tabular}
+\section*{Database}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{MY SQL} & \barrule{0.4}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{SQL Server} & \barrule{0.35}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Oracle} & \barrule{0.30}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Short Resumé}
+
+\begin{tabular}{r| p{0.45\textwidth} c}
+    \cvevent{Feb 2018 – Nov 2022}{IT Executive}{Quetta Club Limited}{Quetta, Pakistan \color{cvred}}{I managed the information technology needs and systems of the employers, including implementing database and network designs, installing and upgrading software, ensuring systems security and troubleshooting computer issues throughout the club.}{thumbnail.png} \\
+    \cvevent{June 2017 – Jan 2018}{Office Supervisor}{Quetta Club Limited}{Quetta, Pakistan \color{cvred}}{\begin{itemize}
+    \item The primary responsibilities include; Oversees clerical and support services
+    \item Assists clerical and support staff with their assigned duties, particularly when more advanced, skilled, or sensitive work is required.
+    \item Completes, prepares, and distributes various forms and reports.
+    \item Schedules meetings and daily operations.
+    \item Makes travel arrangements and reservations.
+    \item Participates in budget preparation and administration.
+    \item Evaluates and implements policies and procedures.
+    \item Performs other related duties as assigned.
+\end{itemize}}{thumbnail.png}\\
+     \cvevent{Jan 2017 – May 2017}{IT Technician/ Assistant}{Serena Hotel}{Islamabad, Pakistan \color{cvred}}{{\begin{itemize}
+    \item Analyze and process customer inquiries in the software and hardware area as well as track the fault reports received via email.
+    \item  Support of IT users in the hardware and software environment 
+    \item Troubleshooting
+    \item Documentation in the corresponding systems and knowledge database.
+\end{itemize}}}{Serena Logo.png} \\
+\end{tabular}
+
+
+
+
+\begin{minipage}[t]{0.3\textwidth}
+
+\bigskip
+
+
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+
+\bigskip
+
+
+\end{minipage}
+
+
+
+
+
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
